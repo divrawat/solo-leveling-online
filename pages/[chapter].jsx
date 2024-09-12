@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
-import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN, DOMAIN_NAME, MANGA_GENRE, MANGA_TYPE } from '@/config';
+import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN, DOMAIN_NAME, MANGA_GENRE, MANGA_TYPE, last5chapters } from '@/config';
 // import DisqusComments from '@/components/DisQus';
 import { AiFillChrome } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
@@ -326,6 +326,12 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                         <DisqusComments url={`/manga/${URL}`} identifier={chapterNumber} title={`${MANGA_NAME} Chapter ${chapterNumber}`} />
                     </section>
                 </div> */}
+                <div className="text-white my-5">
+                    <h2 className="text-3xl text-center my-5">{`${MANGA_NAME} Latest Chapters`}</h2>
+                    {last5chapters?.map((chapter, index) => (
+                        <div key={index} className="text-center p-1.5 hover:underline"><a href={`${DOMAIN}/chapter-${chapter.chapterNumber}`}>{`Solo Leveling ${chapter.chapterNumber}`}</a></div>
+                    ))}
+                </div>
             </article>
 
             <Footer />
