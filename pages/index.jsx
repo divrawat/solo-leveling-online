@@ -88,7 +88,7 @@ export default function Home() {
         "@id": `${DOMAIN}/#website`,
         "url": `${DOMAIN}`,
         "name": `${MANGA_NAME} ${MANGA_TYPE} Online`,
-        "description": `Read ${MANGA_NAME} ${MANGA_TYPE} Online in High Quality`,
+        "description": `Read ${MANGA_NAME} ${MANGA_TYPE} Online in a very High Quality`,
         "publisher": {
           "@id": `${DOMAIN}/#/schema/person/4c3ee266c98401p552c9dc20248825eb`
         },
@@ -218,7 +218,7 @@ export default function Home() {
 
             {chapters?.map((chapter, index) => (
               <div className="flex hover:scale-105 active:scale-95 transition-transform my-1" key={index}>
-                <a prefetch={false} href={chapter.url} className="sm:p-5 p-1.5 text-center  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[160px] w-[110px]">
+                <a href={chapter.url} className="sm:p-5 p-1.5 text-center  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[160px] w-[110px]">
                   <p className="sm:text-[14px] text-[12px] tracking-wider font-semibold">{`Chapter  ${chapter?.number}`}</p>
                 </a>
               </div>
@@ -266,7 +266,9 @@ export default function Home() {
         <div className="flex justify-center"><img src={`${DOMAIN}/5.jpg`} alt={`${MANGA_NAME} Images`} /></div>
 
 
-
+        <div className="flex justify-center">
+          <iframe width="300" height="315" src="https://www.youtube.com/embed/OdQrlp3uYQM?si=PTli9zJw0DryQUSc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </div>
 
 
       </article >

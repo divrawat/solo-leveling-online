@@ -34,7 +34,7 @@ export const BEHIND_COVER_IMG = "";
 
 
 // Navbar
-export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] w-[75px] rounded-md mr-5 md:ml-0 ml-4 md:pb-2 md:my-0 my-1" />
+export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] w-[75px] rounded-[45%] mr-5 md:ml-0 ml-4 md:pb-2 md:my-0 my-1" />
 
 export const APP_NAME = 'Solo Leveling';
 export const NavbarName = "Solo Leveling";

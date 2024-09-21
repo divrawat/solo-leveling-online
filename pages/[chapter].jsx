@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import Head from 'next/head';
 import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN, DOMAIN_NAME, MANGA_GENRE, MANGA_TYPE, last5chapters } from '@/config';
 // import DisqusComments from '@/components/DisQus';
-import { AiFillChrome } from "react-icons/ai";
+// import { AiFillChrome } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
