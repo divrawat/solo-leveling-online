@@ -67,6 +67,7 @@ export const MANGA_SUMMARY = [
 
 
 export const navLinks = [
+    { text: 'Jinx Manga', href: `https://www.jinxmanga.in.net` },
     { text: 'Chapter 1', href: `${DOMAIN}/chapter-1` },
     { text: 'Chapter 10', href: `${DOMAIN}/chapter-10` },
     { text: 'Chapter 40', href: `${DOMAIN}/chapter-40` },
